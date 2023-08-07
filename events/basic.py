@@ -23,8 +23,8 @@ Hello 您好歡迎您成為hihi的朋友
 -Weclome~''',emojis=emoji)
     
     sticker_message = StickerSendMessage(
-        package_id='11539',
-        sticker_id='52114130'
+        package_id='11537',
+        sticker_id='52002739'
     )
     line_bot_api.reply_message(
         event.reply_token, 
