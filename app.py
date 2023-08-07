@@ -27,6 +27,8 @@ def callback():
 # 處理訊息callback the same message 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
+    profile = line_bot_api.get_profile(event.source.user_id)
+    uid = profile.user_id
     message_text=str(event.message.text).lower()
 
     ################使用說明 選單 油價查詢################
@@ -36,22 +38,23 @@ def handle_message(event):
 
     if event.message.text == "@想知道油價":
         content = oil_price()
-        line_bot_api.replay_message(
+        line_bot_api.reply_message(
             event.replay_token,
-            TextSendMessage(text=content)
-        )
+            TextSendMessage(text=content))
+    ###################### 股票區 ######################
+    if event.message.text == "股價查詢":
+        line_bot_api.push_message(uid,TextSendMessage("請輸入#加股價代號......"))
 
 @handler.add(FollowEvent)
 def handle_follow(event):
-    Welcome_msg="""Hello! 您好，歡迎成為A1 的好友!
+    welcome_msg="""Hello! 您好，歡迎成為A1 的好友!
 
-    其實你可以不用回來
-    期待您的滾蛋😄
+    其實你可以不用回來😄
     """
 
     line_bot_api.reply_message(
         event.replay_token,
-        TextSendMessage(text=Welcome_msg))
+        TextSendMessage(text=welcome_msg))
 
 @handler.add(UnfollowEvent)
 def handle_unfollow(event):
