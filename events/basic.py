@@ -54,7 +54,7 @@ Hello 您好歡迎您成為hihi的朋友
 
     line_bot_api.reply_message(
         event.reply_token, 
-        [text_message, sticker_message])
+        [text_message, sticker_message, buttons_template])
     
 def push_msg(event,msg):
     try:
