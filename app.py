@@ -41,5 +41,22 @@ def handle_message(event):
             TextSendMessage(text=content)
         )
 
+@handler.add(FollowEvent)
+def handle_follow(event):
+    Welcome_msg="""Hello! 您好，歡迎成為A1 的好友!
+
+    其實你可以不用回來
+    期待您的滾蛋😄
+    """
+
+    line_bot_api.reply_message(
+        event.replay_token,
+        TextSendMessage(text=Welcome_msg))
+
+@handler.add(UnfollowEvent)
+def handle_unfollow(event):
+    print(event)
+
+
 if __name__ == "__main__": 
     app.run()
