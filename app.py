@@ -65,10 +65,8 @@ def handle_message(event):
     # 新增使用者關注的股票到mongodb
     if re.match('關注[0-9]{4}[<>][0-9]', msg):
         stockNumber = msg[2:6]
-        content = write_my_stock(uid, user_name, stockNumber, msg[6:7], msg[7:])
         line_bot_api.push_message(uid, TextSendMessage(content))
-    else:
-        content = write_my_stock(uid, user_name, stockNumber, "未設定", "未設定")
+        content = write_my_stock(uid, user_name, stockNumber, msg[6:7] ,msg[7:] )
         line_bot_api.push_message(uid, TextSendMessage(content))
         return 0
 
