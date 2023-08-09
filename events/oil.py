@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-
+# 油價查詢
 def oil_price():
     target_url = 'https://gas.goodlife.tw/'
     rs = requests.session()

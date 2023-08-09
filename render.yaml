@@ -3,7 +3,7 @@ services:
   name: line-bot-python-flask
   env: python
   repo: https://github.com/WuZuMan/A1.git
-  buildCommand: cd examples/flask-echo;pip install gunicorn -r requirements.txt
+    buildCommand: cd examples/flask-echo;pip install gunicorn -r requirements.txt
   startCommand: cd examples/flask-echo;gunicorn app:app
   plan: free
   autoDeploy: false
@@ -54,7 +54,7 @@ services:
 # - type: web
 #   name: line-bot-python-aiohttp
 #   env: python
-#   repo: https://github.com/line/line-bot-sdk-python.git
+#   repo: https://github.com/m1016m/RenderFinace.git
 #   buildCommand: cd examples/aiohttp-echo;pip install -r requirements.txt
 #   startCommand: cd examples/aiohttp-echo;python app.py
 #   plan: free
