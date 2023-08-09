@@ -38,8 +38,8 @@ Hello 您好歡迎您成為hihi的朋友
             thumbnail_image_url='https://i.imgur.com/aYbxhvj.jpeg',
             actions=[
                 MessageTemplateAction(
-                    label='油價查詢',
-                    text='油價查詢'
+                    label='想知道油價',
+                    text='想知道油價'
                 ),
                 MessageTemplateAction(
                     label='匯率查詢',
