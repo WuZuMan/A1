@@ -39,7 +39,7 @@ def show_Button():
         "text": "幣別種類",
         "weight": "bold",
         "size": "xl",
-        "color": "#AA2B1D"
+        "color": "#91510d"
       }
     ]
   },
@@ -59,8 +59,8 @@ def show_Button():
               "text": "USD"
             },
             "gravity": "center",
-            "style": "primary",
-            "color": "#53af4b",
+            "style": "secondary",
+            "color": "#F5F5F5",
             "margin": "sm"
           },
           {
@@ -71,8 +71,8 @@ def show_Button():
               "text": "JPY"
             },
             "gravity": "center",
-            "style": "primary",
-            "color": "#f29eff",
+            "style": "secondary",
+            "color": "#F5F5F5",
             "margin": "sm"
           },
           {
@@ -83,8 +83,8 @@ def show_Button():
               "text": "HKD"
             },
             "gravity": "center",
-            "style": "primary",
-            "color": "#ec8f32",
+            "style": "secondary",
+            "color": "#F5F5F5",
             "margin": "sm"
           }
         ]
@@ -105,8 +105,8 @@ def show_Button():
               "text": "GBP"
             },
             "gravity": "center",
-            "style": "primary",
-            "color": "#27d1dd",
+            "style": "secondary",
+            "color": "#F5F5F5",
             "margin": "sm"
           },
           {
@@ -117,8 +117,8 @@ def show_Button():
               "text": "AUD"
             },
             "gravity": "center",
-            "style": "primary",
-            "color": "#CC561E",
+            "style": "secondary",
+            "color": "#F5F5F5",
             "margin": "sm"
           },
           {
@@ -129,8 +129,8 @@ def show_Button():
               "text": "CAD"
             },
             "gravity": "center",
-            "style": "primary",
-            "color": "#c13425",
+            "style": "secondary",
+            "color": "#F5F5F5",
             "margin": "sm"
           }
         ]
@@ -151,8 +151,8 @@ def show_Button():
               "text": "CHF"
             },
             "gravity": "center",
-            "style": "primary",
-            "color": "#940000",
+            "style": "secondary",
+            "color": "#F2EAD3",
             "margin": "sm"
           },
           {
@@ -163,8 +163,8 @@ def show_Button():
               "text": "SGD"
             },
             "gravity": "center",
-            "style": "primary",
-            "color": "#d64371",
+            "style": "secondary",
+            "color": "#F2EAD3",
             "margin": "sm"
           },
           {
@@ -175,8 +175,8 @@ def show_Button():
               "text": "ZAR"
             },
             "gravity": "center",
-            "style": "primary",
-            "color": "#c9a464",
+            "style": "secondary",
+            "color": "#F2EAD3",
             "margin": "sm"
           }
         ]
@@ -197,8 +197,8 @@ def show_Button():
               "text": "SEK"
             },
             "gravity": "center",
-            "style": "primary",
-            "color": "#0fb7ff",
+            "style": "secondary",
+            "color": "#F2EAD3",
             "margin": "sm"
           },
           {
@@ -209,8 +209,8 @@ def show_Button():
               "text": "THB"
             },
             "gravity": "center",
-            "style": "primary",
-            "color": "#001fbd",
+            "style": "secondary",
+            "color": "#F2EAD3",
             "margin": "sm"
           },
           {
@@ -221,8 +221,8 @@ def show_Button():
               "text": "PHP"
             },
             "gravity": "center",
-            "style": "primary",
-            "color": "#5c1414",
+            "style": "secondary",
+            "color": "#F2EAD3",
             "margin": "sm"
           }
         ]
@@ -244,7 +244,7 @@ def show_Button():
             },
             "gravity": "center",
             "style": "primary",
-            "color": "#b82e00",
+            "color": "#DFD7BF",
             "margin": "sm"
           },
           {
@@ -256,7 +256,7 @@ def show_Button():
             },
             "gravity": "center",
             "style": "primary",
-            "color": "#9067ef",
+            "color": "#DFD7BF",
             "margin": "sm"
           },
           {
@@ -268,7 +268,7 @@ def show_Button():
             },
             "gravity": "center",
             "style": "primary",
-            "color": "#702f92",
+            "color": "#DFD7BF",
             "margin": "sm"
           }
         ]
@@ -290,7 +290,7 @@ def show_Button():
             },
             "gravity": "center",
             "style": "primary",
-            "color": "#d2c61e",
+            "color": "#3F2305",
             "margin": "sm"
           },
           {
@@ -302,7 +302,7 @@ def show_Button():
             },
             "gravity": "center",
             "style": "primary",
-            "color": "#787878",
+            "color": "#3F2305",
             "margin": "sm"
           },
           {
@@ -314,7 +314,7 @@ def show_Button():
             },
             "gravity": "center",
             "style": "primary",
-            "color": "#dab201",
+            "color": "#3F2305",
             "margin": "sm"
           }
         ]
@@ -322,6 +322,6 @@ def show_Button():
     ]
   }
 }
-           
+                        
     )
     return flex_message
