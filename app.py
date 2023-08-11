@@ -159,6 +159,7 @@ def handle_message(event):
     ################################### 股價提醒 ######################################
     if re.match("關閉提醒", msg):
         import schedule
+        line_bot_api.push_message(uid, TextSendMessage("股票提醒關閉"))
         schedule.clear()
 
     if re.match("股價提醒", msg):
