@@ -55,6 +55,8 @@ def handle_message(event):
     if event.message.text == "股價查詢":
         line_bot_api.push_message(uid,TextSendMessage("請輸入#加股票代號....."))
     
+
+
     #股價查詢
     if re.match("想知道股價[0-9]", msg):
         msg = msg[5:]
@@ -62,14 +64,21 @@ def handle_message(event):
         line_bot_api.push_message(uid, btn_msg)
         return 0
 
-
     # 新增使用者關注的股票到mongodb
     if re.match('關注[0-9]{4}[<>][0-9]', msg):
         stockNumber = msg[2:6]
-        line_bot_api.push_message(uid, TextSendMessage("關注你的"+stockNumber))
+        line_bot_api.push_message(uid, TextSendMessage("加入股票代號"+stockNumber))
         content = write_my_stock(uid, user_name, stockNumber, msg[6:7] ,msg[7:] )
         line_bot_api.push_message(uid, TextSendMessage(content))
         return 0
+
+    # 查詢股票篩選條件清單
+    if re.match('股票清單', msg):
+        line_bot_api.push_message(uid, TextSendMessage("稍等一下，股票查詢中..."))
+        content = show_stock_setting(user_name, uid)
+        line_bot_api.push_message(uid, TextSendMessage(content))
+        return 0
+    
 
 
     if(msg.startswith('#')):

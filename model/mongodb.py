@@ -36,3 +36,14 @@ def write_my_stock(userID, user_name, stockNumber, condition , target_price):
                 "date_info": datetime.datetime.now()
             })
         return f"{stockNumber}已新增至您的股票清單"
+    
+#   -----------    秀出使用者的股票條件       -------------
+def show_stock_setting(user_name, userID):
+    db = constructor_stock()
+    collect = db[user_name]
+    dataList = list(collect.find({"userID":userID}))
+    if dataList == []: return "您的股票清單為空, 請透過指令新增股票至清單中"
+    content = "您清單中的選股條件為: \n"
+    for i in range(len(dataList)):
+        content += f'{dataList[i]["favorite_stock"]}{dataList[i]["condition"]}{dataList[i]["price"]}\n'
+    return content
