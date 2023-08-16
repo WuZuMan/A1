@@ -1,10 +1,12 @@
 line-bot-sdk
 bs4
 flask
+gunicorn
 requests
 twder
 twstock
 pymongo
 datetime
-gunicorn
-schedule
+numpy
+pandas
+matplotlib
